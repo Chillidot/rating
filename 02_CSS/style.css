@@ -1,0 +1,205 @@
+/***** IMPORTS *****/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/***** GENERAL *****/
+/** Variables **/
+:root{
+    --clr-primary: #fb7413;
+    --clr-white: #FFFFFF;
+    --clr-extralight-gray: #b6c1d1;
+    --clr-light-gray: #959eac;
+    --clr-medium-gray: #7c8798;
+    --clr-dark-blue: #252d37;
+    --clr-extradark-blue: #121417;
+    --ff-primary: 'Overpass', sans-serif;
+}
+
+/** Tags **/
+body{
+    margin: 0;
+    background-color: var(--clr-extradark-blue);
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    color: var(--clr-white);
+    font-size: 15px;
+}
+
+h1{
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+p{
+    color: var(--clr-light-gray);
+    margin: 0.5rem 0;
+}
+
+/***** GRID *****/
+.grid-container{
+    min-height: 98vh;
+    display: grid;
+    place-items: center;
+}
+
+/***** FLEX *****/
+.flex-row-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-row-start-center{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-row-center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+/***** STRUCTURE *****/
+/** header **/
+
+/** nav **/
+
+/** main **/
+
+/** footer **/
+
+/** rating **/
+#rating{
+    display: visible;
+}
+
+/** thanks **/
+#thanks{
+    display: none;
+}
+
+/***** ITEMS ******/
+/** Card **/
+.card-rating{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-gap: 1rem;
+    width: 33vw;
+    min-height: 47vh;
+    background-color: var(--clr-dark-blue);
+    border-radius: 2rem;
+    overflow: visible;
+}
+
+.card-thanks{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-gap: 1rem;
+    width: 33vw;
+    min-height: 47vh;
+    background-color: var(--clr-dark-blue);
+    border-radius: 2rem;
+    overflow: visible;
+}
+
+/** Circle **/
+svg{
+    max-width: 100%;
+    height: auto;
+}
+
+.circle{
+    fill: var(--clr-medium-gray);
+}
+
+/** Buttons **/
+.button{
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    border: none;
+    font-size: 1.125rem;
+    letter-spacing: 0.125rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.button:hover{
+    background-color: var(--clr-white);
+    color: var(--clr-primary);
+}
+
+.button-round{
+    width: 100%;
+    max-width: 3em;
+    height: 100%;
+    max-height: 3em;
+    background-color: var(--clr-medium-gray);
+    color: var(--clr-white);
+    border-radius: 100%;
+    border: none;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.button-round:hover{
+    background-color: var(--clr-primary);
+    transition: 250ms;
+}
+
+/** field **/
+.field{
+    padding: 0.75em;
+    background-color: var(--clr-medium-gray);
+    color: var(--clr-primary);
+    border-radius: 2rem;
+}
+
+/***** SITES *****/
+
+/***** MEDIAQUERIES *****/
+@media only screen and (max-width: 376px){
+    .card-rating{
+        min-height: 50vh;
+        width: 65vw;
+    }
+
+    .card-thanks{
+        min-height: 50vh;
+        width: 65vw;
+    }
+}
+
+/***** ANIMATIONS *****/
+
+/***** OTHER *****/
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
